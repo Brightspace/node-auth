@@ -1,8 +1,5 @@
 # brightspace-auth (monorepo)
 
-[![Build Status](https://travis-ci.org/Brightspace/node-auth.svg?branch=master)](https://travis-ci.org/Brightspace/node-auth)
-[![Coverage Status](https://coveralls.io/repos/github/Brightspace/node-auth/badge.svg?branch=master)](https://coveralls.io/github/Brightspace/node-auth?branch=master)
-
 This repository is a collection of packages relating to Brightspace's OAuth2 framework.
 
 ## Packages
