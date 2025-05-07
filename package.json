@@ -25,7 +25,6 @@
   "dependencies": {
     "@trust/keyto": "^1.0.1",
     "jwk-allowed-algorithms": "^1.0.0",
-    "jwk-to-pem": "^2.0.0",
     "jws": "^4.0.0",
     "superagent": "^7.1.3"
   },
