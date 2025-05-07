@@ -1,6 +1,0 @@
-{
-    "extends": "brightspace/node-config",
-    "parserOptions": {
-        "ecmaVersion": 8
-    }
-}
