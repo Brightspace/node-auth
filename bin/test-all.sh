@@ -8,9 +8,15 @@ TOP_DIR=$(pwd)
 
 rm -r .nyc_output 2>/dev/null || :
 
+EXIT_CODE=0
+
 for package in $(get_packages); do
 	cd "${package}"
+
+	set +e
 	npm test
+	EXIT_CODE+=$?
+	set -e
 
 	cd "${TOP_DIR}"
 	if [ -d "${package}/.nyc_output" ]; then
@@ -25,3 +31,5 @@ done
 	--exclude-node-modules false \
 	--reporter text \
 	--reporter lcov
+
+exit $EXIT_CODE
