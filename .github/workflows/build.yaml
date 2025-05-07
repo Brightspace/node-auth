@@ -45,7 +45,7 @@ jobs:
 
       - uses: Brightspace/third-party-actions@actions/setup-node
         with:
-          node-version: 22
+          node-version: 24
           registry-url: 'https://registry.npmjs.org'
 
       - run: npm install
