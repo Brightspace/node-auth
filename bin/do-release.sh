@@ -27,6 +27,6 @@ for package in $(get_packages); do
 	if [ ! -z "${DRY_RUN}" ]; then
 		echo "Dry run. Skipping..."
 	else
-		npm publish --provenance --access public
+		npm publish --provenance --access public --registry https://registry.npmjs.org/
 	fi
 done

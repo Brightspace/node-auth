@@ -46,7 +46,6 @@ jobs:
       - uses: Brightspace/setup-node@main
         with:
           node-version: 24
-          registry-url: 'https://registry.npmjs.org'
 
       - run: npm install
       - run: ./bin/do-release.sh
