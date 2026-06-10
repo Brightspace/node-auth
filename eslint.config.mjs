@@ -7,8 +7,7 @@ export default defineConfig([
 		{
 			languageOptions: {
 				parserOptions: {
-					ecmaVersion: 8,
-					type: 'commonjs',
+					ecmaVersion: 2022,
 				}
 			},
 			rules: {
