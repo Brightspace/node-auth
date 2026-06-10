@@ -28,13 +28,13 @@
   },
   "devDependencies": {
     "aws-sdk": "^2.179.0",
+    "c8": "^11.0.0",
     "chai": "^5.2.0",
     "chai-as-promised": "^8.0.0",
     "dynamodb-local": "0.0.31",
     "eslint": "^9.26.0",
     "eslint-config-brightspace": "^2.7.2",
     "mocha": "^11.1.0",
-    "nyc": "^17.1.0",
     "redis": "^2.8.0",
     "sinon": "^20.0.0",
     "undici": "^7.8.0"
