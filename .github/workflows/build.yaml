@@ -48,6 +48,8 @@ jobs:
           node-version: 24
 
       - run: npm install
-      - run: ./bin/do-release.sh
+      - run: |
+          npm config set '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'
+          ./bin/do-release.sh
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
