@@ -6,7 +6,8 @@ source "$(dirname ${BASH_SOURCE[0]})/helpers.sh"
 
 TOP_DIR=$(pwd)
 
-rm -r .nyc_output 2>/dev/null || :
+rm -r coverage 2>/dev/null || :
+mkdir -p coverage/tmp
 
 EXIT_CODE=0
 
@@ -19,16 +20,16 @@ for package in $(get_packages); do
 	set -e
 
 	cd "${TOP_DIR}"
-	if [ -d "${package}/.nyc_output" ]; then
-		./node_modules/.bin/nyc \
-			merge \
-			"${package}/.nyc_output" \
-			".nyc_output/$(basename "${package}").json"
+	if [ -d "${package}/coverage/tmp" ]; then
+		cp \
+			"${package}/coverage/tmp/"* \
+			"coverage/tmp"
 	fi
 done
 
-./node_modules/.bin/nyc report \
+./node_modules/.bin/c8 report \
 	--exclude-node-modules false \
+	--exclude node_modules/ \
 	--reporter text \
 	--reporter lcov
 

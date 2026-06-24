@@ -34,7 +34,6 @@
     "eslint-config-brightspace": "^2.7.2",
     "find-requires": "^1.0.0",
     "mocha": "^11.1.0",
-    "nyc": "^17.1.0",
     "sinon": "^20.0.0",
     "undici": "^8.5.0"
   }

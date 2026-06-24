@@ -18,7 +18,6 @@ export default defineConfig([
 		},
 		globalIgnores([
 			'coverage',
-			'.nyc_output',
 			'!packages/node_modules/',
 		]),
 	], {
