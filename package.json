@@ -27,13 +27,12 @@
     "jwk-allowed-algorithms": "^1.0.0"
   },
   "devDependencies": {
+    "c8": "^11.0.0",
     "chai": "^4.1.1",
     "chai-as-promised": "^7.1.1",
     "eslint": "^9.26.0",
     "eslint-config-brightspace": "^2.7.2",
-    "find-requires": "^1.0.0",
     "mocha": "^11.1.0",
-    "nyc": "^17.1.0",
     "sinon": "^20.0.0",
     "undici": "^8.5.0"
   }

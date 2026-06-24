@@ -7,8 +7,8 @@ export default defineConfig([
 		{
 			languageOptions: {
 				parserOptions: {
-					ecmaVersion: 8,
-					type: 'commonjs',
+					ecmaVersion: 2025,
+					type: 'module',
 				}
 			},
 			rules: {
@@ -18,7 +18,6 @@ export default defineConfig([
 		},
 		globalIgnores([
 			'coverage',
-			'.nyc_output',
 			'!packages/node_modules/',
 		]),
 	], {
