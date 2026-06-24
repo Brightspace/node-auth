@@ -10,11 +10,6 @@ This repository is a collection of packages relating to Brightspace's OAuth2 fra
 * [brightspace-auth-token](packages/node_modules/brightspace-auth-token)
 * [brightspace-auth-validation](packages/node_modules/brightspace-auth-validation)
 
-### `AbstractPublicKeyStore` Implementations
-
-* [redis](packages/node_modules/brightspace-auth-keys-redis-store)
-* [dynamodb](packages/node_modules/brightspace-auth-keys-dynamodb-store)
-
 ## Testing
 
 ```bash
