@@ -36,6 +36,7 @@ jobs:
     permissions:
       contents: read
       id-token: write
+    environment: publish
     steps:
       - uses: Brightspace/third-party-actions@actions/checkout
 
