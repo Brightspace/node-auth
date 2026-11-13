@@ -45,8 +45,4 @@ jobs:
           d2l-registry-token: ${{ secrets.D2L_PACKAGE_REGISTRY_AUTH_TOKEN }}
 
       - run: npm install
-      - run: |
-          npm config set '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'
-          ./bin/do-release.sh
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - run: ./bin/do-release.sh
