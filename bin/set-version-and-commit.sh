@@ -15,4 +15,3 @@ echo "New version: ${NEW_VERSION}"
 ./bin/set-version.js "${NEW_VERSION}"
 
 git commit package.json packages/node_modules/*/package.json -m "package: bump v${NEW_VERSION}"
-git tag -s "v${NEW_VERSION}"
